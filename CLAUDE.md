@@ -55,3 +55,40 @@ Optional settings:
 3. Use `AshAuthentication.Hologram.Page` instead of `Hologram.Page`
 4. Add `on_mount {AshAuthentication.Hologram.Hooks, :live_user_required}` to protected pages
 5. Add `plug AshAuthentication.Hologram.Plug` to endpoint after `:fetch_session`
+
+## Commit Message Format
+
+Commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Types
+
+- **`fix:`** — patches a bug (PATCH semantic version)
+- **`feat:`** — introduces a new feature (MINOR semantic version)
+- **`BREAKING CHANGE:`** — breaking API change (MAJOR semantic version)
+
+Other types: `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`
+
+### Breaking Changes
+
+- Prefix notation: `feat(parser)!:` (the `!` signals breaking change)
+- Footer notation: `BREAKING CHANGE: description`
+
+### Examples
+
+```
+feat: allow provided config object to extend other configs
+
+fix: prevent racing of requests
+
+docs: correct spelling of CHANGELOG
+
+feat(lang): add Polish language
+```

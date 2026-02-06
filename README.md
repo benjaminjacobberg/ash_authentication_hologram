@@ -2,6 +2,8 @@
 
 > **Note:** This is an unofficial project and is not affiliated with the official Ash project or Hologram.
 
+> **Warning:** This project is in very early development and is not production ready. Use with caution.
+
 ## Installation
 
 Add `ash_authentication_hologram` to your list of dependencies in `mix.exs`:
