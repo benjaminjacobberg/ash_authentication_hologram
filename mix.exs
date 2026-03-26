@@ -29,7 +29,7 @@ defmodule AshAuthenticationHologram.MixProject do
 
   defp deps do
     [
-      {:hologram, "~> 0.6.6", runtime: false},
+      {:hologram, "~> 0.8", runtime: false},
       {:ash_authentication, "~> 4.0"},
       {:phoenix, "~> 1.7"},
       {:plug, "~> 1.14"},
